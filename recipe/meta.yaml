@@ -1,5 +1,5 @@
 {% set name = "kedro-datasets" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kedro-datasets-{{ version }}.tar.gz
-  sha256: 4ae086a48a6ce4322f4c7e33dc6f533e1dcc092573f48fdad33265aac4411e1c
+  sha256: a2fd671bc0d47aa82da78177369cc672a0f829457f0b389297e550731f5e4e75
 
 build:
   noarch: python
@@ -15,21 +15,20 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - setuptools >=61.2
   host:
     - python >=3.7,<3.11
+    - setuptools >=61.2
     - pip
   run:
     - python >=3.7,<3.11
-    - kedro >=0.18.4,<0.19.0
-    - lazy_loader >=0.1,<1.0.0
+    - kedro >=0.16
+    - lazy_loader
 
 test:
   imports:
     - kedro_datasets
   commands:
-    #- pip check # kedro 0.18.11 has requirement pip-tools~=6.5, but you have pip-tools 7.1.0
+    - pip check # kedro 0.18.11 has requirement pip-tools~=6.5, but you have pip-tools 7.1.0
   requires:
     - pip
 
