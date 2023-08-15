@@ -28,7 +28,7 @@ test:
   imports:
     - kedro_datasets
   commands:
-    #- pip check # kedro 0.18.11 has requirement pip-tools~=6.5, but you have pip-tools 7.1.0
+    - pip check # kedro 0.18.11 has requirement pip-tools~=6.5, but you have pip-tools 7.1.0
   requires:
     - pip
 
