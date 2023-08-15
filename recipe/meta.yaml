@@ -1,5 +1,5 @@
 {% set name = "kedro-datasets" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kedro-datasets-{{ version }}.tar.gz
-  sha256: 4ae086a48a6ce4322f4c7e33dc6f533e1dcc092573f48fdad33265aac4411e1c
+  sha256: a2fd671bc0d47aa82da78177369cc672a0f829457f0b389297e550731f5e4e75
 
 build:
   noarch: python
