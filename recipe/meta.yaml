@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >=3.9
-    - kedro >=0.16
+    - kedro >=0.19
     - lazy_loader
 
 test:
