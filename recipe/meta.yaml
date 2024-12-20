@@ -1,5 +1,6 @@
 {% set name = "kedro-datasets" %}
 {% set version = "6.0.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
