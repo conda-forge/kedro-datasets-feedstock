@@ -1,5 +1,5 @@
 {% set name = "kedro-datasets" %}
-{% set version = "6.0.0" %}
+{% set version = "7.0.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6dc964d4b60bab89c9836044fe2a027676395acac610a1500a4727036c38a3c4
+  sha256: 637c5ddca753e54e2ad30916e85396f433513bd6d589460ca74bec3574a92256
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   script_env:
     - PYTHONWARNINGS="ignore::UserWarning"
