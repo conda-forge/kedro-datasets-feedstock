@@ -25,7 +25,7 @@ requirements:
   run:
     - lazy-loader
     - python >={{ python_min }}
-    - kedro >=1.0.0rc1,<2.0.0
+    - kedro >=1.0.0,<2.0.0
     - lazy_loader
 
 test:
