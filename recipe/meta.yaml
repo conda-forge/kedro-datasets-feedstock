@@ -1,6 +1,5 @@
 {% set name = "kedro-datasets" %}
 {% set version = "9.0.0" %}
-{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -23,14 +22,15 @@ requirements:
     - setuptools >=61.2
     - pip
   run:
-    - lazy-loader
     - python >={{ python_min }}
+    - backports.strenum
     - kedro >=1.0.0rc1,<2.0.0
     - lazy_loader
 
 test:
   imports:
     - kedro_datasets
+    - kedro_datasets_experimental
   commands:
     - pip check # kedro 0.18.11 has requirement pip-tools~=6.5, but you have pip-tools 7.1.0
   requires:
@@ -40,6 +40,7 @@ test:
 about:
   home: https://github.com/kedro-org/kedro-plugins/tree/main/kedro-datasets
   summary: Kedro-Datasets is where you can find all of Kedro's data connectors.
+  dev_url: https://github.com/kedro-org/kedro-plugins/tree/main/kedro-datasets
   license: Apache-2.0
   license_file: LICENSE.md
 
