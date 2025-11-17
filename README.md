@@ -9,6 +9,8 @@ Package license: Apache-2.0
 
 Summary: Kedro-Datasets is where you can find all of Kedro's data connectors.
 
+Development: https://github.com/kedro-org/kedro-plugins/tree/main/kedro-datasets
+
 Current build status
 ====================
 
