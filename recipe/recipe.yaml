@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "9.6.0"
+  version: "10.0.0"
 
 package:
   name: kedro-datasets
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/k/kedro-datasets/kedro_datasets-${{ version }}.tar.gz
-  sha256: f6ae5a4638a4ee66492b28a5ef62f9de8684e95a51bab8d76aaa3a0f80e1594a
+  sha256: b97f0f0f0f0e2c2fba8e5d8d82787de3e1ab5df3e3c8d2685a9ca9d8c09d02de
 
 build:
   number: 0
